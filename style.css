@@ -1,0 +1,495 @@
+
+   General Settings
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #11101A;
+    color: #F5F3FA;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+   Header
+
+.header-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: clamp(25px, 4vw, 36px);
+    font-weight: bold;
+    color: #E6C8FF;
+}
+
+.subtitle {
+    color: #A9A3B5;
+    margin-top: 10px;
+}
+
+   Cards
+
+.custom-card {
+    background: #1D1B29;
+    border: 1px solid #393448;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #E6C8FF;
+}
+
+.section-title span {
+    margin-right: 7px;
+}
+
+
+   form
+
+.form-label {
+    color: #E4DDED;
+    font-weight: 600;
+}
+
+.form-control {
+    background: #292638;
+    border: 1px solid #484258;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.form-control::placeholder {
+    color: #9992A8;
+}
+
+.form-control:focus {
+    background: #292638;
+    color: white;
+    border-color: #C99BFF;
+    box-shadow: 0 0 0 0.2rem rgba(201, 155, 255, 0.15);
+}
+
+/* Fix number input appearance */
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+   Buttons
+
+.btn-add {
+    background: #B88AE8;
+    color: #171020;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background: #D2B1F5;
+    color: #171020;
+    transform: translateY(-2px);
+}
+
+.btn-mercy {
+    background: #D6B86A;
+    color: #211A0B;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-mercy:hover {
+    background: #EBD28F;
+    color: #211A0B;
+    transform: translateY(-2px);
+}
+
+ .error-box
+
+.error-box {
+    display: none;
+    background: rgba(220, 53, 69, 0.12);
+    color: #FF8D9A;
+    border: 1px solid #A94452;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+   .students-list
+
+.student-counter {
+    color: #B9B2C7;
+}
+
+.student-counter span {
+    color: #D6B2FF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student-item {
+    background: #292638;
+    border: 1px solid #484258;
+    border-left: 4px solid #B88AE8;
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease;
+}
+
+.student-name {
+    color: #E6C8FF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.student-details {
+    color: #B9B2C7;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+
+   .Final-Report
+
+.report-box {
+    background: #292638;
+    border: 1px  olid #484258;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.report-box h4 {
+    color: #D6B86A;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.report-stat {
+    background: #1D1B29;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.report-stat strong {
+    color: #D6B86A;
+    font-size: 22px;
+}
+
+.report-name {
+    background: #363044;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #F5E9FF;
+}
+
+.report-average {
+    color: #D6B86A;
+    font-weight: bold;
+}
+
+.empty-message {
+    color: #9992A8;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+   Footer
+
+footer {
+    color: #827B91;
+    font-size: 13px;
+}
+
+   .Animation
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+   .Responsive-Design
+
+@media (max-width: 576px) {
+
+    .custom-card {
+        padding: 18px;
+    }
+
+    .section-title {
+        font-size: 19px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+    
+}
+ .Exact-Reference-Design
+
+body {
+    background: #100D1B !important;
+    color: #F5EFFC !important;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1500px !important;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+/* Header */
+
+.site-header {
+    padding-top: 12px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.header-icon {
+    font-size: 75px;
+    margin: 0;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 46px);
+    font-weight: bold;
+    color: #E6C8FF;
+}
+
+.subtitle {
+    color: #C8BBD8;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.header-line {
+    height: 2px;
+    background: #A66BD2;
+    margin-top: 25px;
+}
+
+/* Cards */
+
+.custom-card {
+    background: linear-gradient(
+        145deg,
+        #211A31,
+        #191526
+    ) !important;
+
+    border: 1px solid #49375F !important;
+    border-radius: 22px !important;
+    padding: 25px !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+/* Titles */
+
+.section-title {
+    font-family: Georgia, serif;
+    color: #DDB9FA !important;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+
+.form-label {
+    color: #F2EAF9 !important;
+    font-weight: bold;
+}
+
+/* Inputs */
+
+.form-control {
+    background: #211B30 !important;
+    color: white !important;
+    border: 1.5px solid #9464B9 !important;
+    border-radius: 11px !important;
+    padding: 13px !important;
+}
+
+.form-control::placeholder {
+    color: #B7A5CC !important;
+}
+
+.form-control:focus {
+    border-color: #D09AFF !important;
+    box-shadow: 0 0 0 3px rgba(208,154,255,.15) !important;
+}
+
+/* Add Button */
+
+.btn-add {
+    background: linear-gradient(
+        90deg,
+        #B56BE9,
+        #C48CF4
+    ) !important;
+
+    color: #171020 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Mercy Button */
+
+.btn-mercy {
+    background: linear-gradient(
+        90deg,
+        #E5B84E,
+        #F0C66D
+    ) !important;
+
+    color: #211707 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Students */
+
+.student-counter {
+    color: #D6C8E5 !important;
+}
+
+.student-counter span {
+    color: #D8A6FF !important;
+}
+
+.student-item {
+    background: #292138 !important;
+    border: 1px solid #49375F !important;
+    border-left: 6px solid #B66BE9 !important;
+    border-radius: 13px !important;
+    padding: 18px !important;
+}
+
+.student-name {
+    color: #E6C8FF !important;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+
+.student-details {
+    color: #D0C3DF !important;
+    line-height: 1.8;
+}
+
+/* Report */
+
+.report-box {
+    background: #20192D !important;
+    border: 1px solid #49375F !important;
+    border-radius: 15px !important;
+    padding: 18px !important;
+}
+
+.report-box h4 {
+    color: #DDB9FA !important;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.report-stat {
+    background: #2C243A !important;
+    border: 1px solid #49375F;
+    border-radius: 11px;
+    color: #E9DDF4;
+}
+
+.report-stat strong,
+.report-average {
+    color: #E8B94F !important;
+}
+
+.report-name {
+    background: #362746 !important;
+    color: #F5E9FF !important;
+}
+
+/* Error */
+
+.error-box {
+    background: rgba(220,53,69,.12) !important;
+    color: #FF8295 !important;
+    border: 1px solid #D94B65 !important;
+    border-radius: 12px;
+}
+
+/* Footer */
+
+footer {
+    color: #B8A7C9 !important;
+    margin-top: 30px;
+}
+
+/* Mobile */
+
+@media(max-width: 768px) {
+
+    .header-title {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header-icon {
+        font-size: 50px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .custom-card {
+        padding: 18px !important;
+    }
+
+}
